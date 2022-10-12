@@ -118,3 +118,5 @@ def report_historical(data):
             min_hum = min_humidity(data = data, date = d)
             max_hum= max_humidity(data = data, date = d)
             rain = tot_rain(data = data, date = d)
+            display = display + f'{m:20}{min_temp:13}{max_temp:13}{min_hum:10}{max_hum:10}{rain:10.2f}' + "\n"
+    return display
